@@ -6,7 +6,10 @@ try:
 	PROBABILITY = int(os.getenv('PROBABILITY'))
 	if not PROBABILITY:
 		print "PROBABILITY not defined"
+		PROBABILITY = False
 except Exception as e:
+	if not PROBABILITY:
+		print "PROBABILITY not defined"
 	print e
 
 def shouldKill():
