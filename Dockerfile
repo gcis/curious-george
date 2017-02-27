@@ -6,4 +6,4 @@ WORKDIR /app
 
 RUN pip install boto3
 
-CMD [ "python", "main.py" ]
+CMD [ "python", "-u", "main.py" ]

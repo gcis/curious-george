@@ -5,8 +5,8 @@ import os
 try:
 	PROBABILITY = int(os.getenv('PROBABILITY'))
 	if not PROBABILITY:
-		print "PROBABILITY not defined"
-		PROBABILITY = False
+		print "PROBABILITY not defined will default to 50%"
+		PROBABILITY = 50
 except Exception as e:
 	if not PROBABILITY:
 		print "PROBABILITY not defined"
