@@ -12,8 +12,8 @@ To start curious George simply download the docker container `gcis/curious-georg
 - **AWS_SECRET_ACCESS_KEY**: *string* (AWS secret access key)
 - **REGION**: *string* (AWS region)
 - **TAG**: *string* (AWS resource tag-value, see http://boto3.readthedocs.io/en/latest/reference/services/ec2.html#EC2.Client.describe_instances)
-- **PROBABILITY**: int [0-100] (the probability that after a loop an instance get Killed)
-- **LOOP_TIME**: int (time in seconds, duration of each loop - min 15s)
+- **PROBABILITY**: *int* [0-100] (the probability that after a loop an instance get Killed)
+- **LOOP_TIME**: *int* (time in seconds, duration of each loop - min 15s)
 
 In the following example every 1h and the probability that an instance gets killed will be 75%
 
