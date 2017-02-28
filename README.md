@@ -12,10 +12,10 @@ To start curious George simply download the docker container `gcis/curious-georg
 - **AWS_SECRET_ACCESS_KEY**: *string* (AWS secret access key)
 - **REGION**: *string* (AWS region)
 - **TAG**: *string* (AWS resource tag-value, see http://boto3.readthedocs.io/en/latest/reference/services/ec2.html#EC2.Client.describe_instances)
-- **PROBABILITY**: *int* [0-100] (the probability that after a loop an instance get Killed)
+- **PROBABILITY**: *int* [0-100] (the probability that after a loop an instance is terminated)
 - **LOOP_TIME**: *int* (time in seconds, duration of each loop - min 15s)
 
-In the following example every 1h and the probability that an instance gets killed will be 75%
+In the following example every 1h and the probability that an instance is terminated will be 75%
 
     docker run -d \
     -e AWS_ACCESS_KEY_ID=YOURACCESSKEY \
@@ -25,6 +25,7 @@ In the following example every 1h and the probability that an instance gets kill
     -e PROBABILITY=75 \
     -e LOOP_TIME=3600
 
+####
 #### N.B.
 AWS credentials (except REGION) can be replaced by linking the container local credentials
 to your local aws config by launching the container using
