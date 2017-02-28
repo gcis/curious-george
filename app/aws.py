@@ -61,7 +61,7 @@ def pickRandomInstance():
 def killInstance():
 	id = pickRandomInstance()
 	if id:
-		print "George found an instance..."
+		print "George found an instance..." + id
 		try:
 			response = ec2.terminate_instances(
 			    DryRun=False,
