@@ -19,6 +19,7 @@ try:
 	)
 except Exception as e:
 	print e
+	quit()
 
 
 def pickRandomInstance():

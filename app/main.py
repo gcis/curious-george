@@ -5,12 +5,12 @@ from aws import killInstance
 from welcome import welcome
 
 try:
-	TIMEOUT = int(os.getenv('TIMEOUT'))
-	if not TIMEOUT:
-		print "TIMEOUT not defined default to 600s"
-		TIMEOUT = 600
-	if TIMEOUT < 15:
-		print "TIMEOUT must be at least 60s (will default to 15)"
+	LOOP_TIME = int(os.getenv('LOOP_TIME'))
+	if not LOOP_TIME:
+		print "LOOP_TIME not defined default to 600s"
+		LOOP_TIME = 600
+	if LOOP_TIME < 15:
+		print "LOOP_TIME must be at least 60s (will default to 15)"
 except Exception as e:
 	print e
 
@@ -24,8 +24,8 @@ while True:
 		killInstance()
 	else:
 		print "George didn't touch anything this time..."
-	print "George is tired and will sleep for " + str(TIMEOUT) + " seconds..."
-	time.sleep(TIMEOUT)
+	print "George is tired and will sleep for " + str(LOOP_TIME) + " seconds..."
+	time.sleep(LOOP_TIME)
 
 
 
