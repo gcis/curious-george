@@ -1,4 +1,5 @@
-# Curious George
+![alt tag](https://raw.githubusercontent.com/gcis/curious-george/master/doc/resources/img/curiousgeorge.png)
+
 
 Curiosous George is a very simple app that will kill instances in you AWS environment, based on a tag value provided by the user (more complex tag key/value configuration will be implemented in future development)
 
