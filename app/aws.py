@@ -33,6 +33,12 @@ def pickRandomInstance():
 		            'Values': [
 		                TAG
 		            ]
+		        },
+		        {
+		        	'Name': 'instance-state-name',
+		        	'Values': [
+		        		'running'
+	        		]
 		        }
 	    	]
 	    )
