@@ -65,7 +65,7 @@ def killInstance():
 		print "George found an instance..."
 		try:
 			response = ec2.terminate_instances(
-			    DryRun=True,
+			    DryRun=False,
 			    InstanceIds=[
 			        id,
 			    ]
