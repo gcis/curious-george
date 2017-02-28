@@ -1,7 +1,6 @@
 import boto3
 import os
 import random
-from pprint import pprint
 
 try:
 	REGION = os.getenv('REGION')
