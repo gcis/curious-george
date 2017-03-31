@@ -1,0 +1,8 @@
+pipeline:
+  docker::
+    repo: gcis/curious-george
+    registry: hub.docker.com
+    username: gcis
+    password: 9fDvg}.Xy8uV,QP7JPy4t>yJ
+    tag: drone
+    file: Dockerfile   
